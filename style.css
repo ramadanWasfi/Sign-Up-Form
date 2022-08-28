@@ -1,0 +1,17 @@
+@font-face {
+    font-family: JosefinSans-Regular;
+    src: url(./Fonts/JosefinSans-Regular.ttf);
+
+    font-family: Montserrat-Regular;
+    src: url(./Fonts/Montserrat-Regular.otf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
