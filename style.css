@@ -16,3 +16,50 @@ body {
     background-color: #222;
     font-family: 'JosefinSans-Regular', sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    margin: 0 12rem;
+}
+
+.sidebar {
+    background-image: url(./Images/sign-up.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width:30%;
+    color: #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color:rgba(0,0,0,.5);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+
+.logo > p {
+    color: #fff;
+    font-size: 48px;
+    font-style: italic;
+}
+.main {
+    width: 70%;
+}
+
+.sidebar > footer > a{
+    color: #eee;
+}
+
+.sidebar > footer {
+    margin-bottom: 12px;
+}
