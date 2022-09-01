@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -19,51 +20,51 @@
                 </a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a> </footer>
         </div>
         <div class="main">
-            <div>
+            <div class="main-content">
                 <p>
                     This is not a real online service! You know you need something<br>
                     like this in your life to help you realize your deepest dreams. <br>
-                    Sign up now to get started
-                </p>
-                <p>
+                    Sign up now to get started<br><br>
                     You know you want to.
+
                 </p>
+                
             </div>
+            <h2>Let's Do This</h2>
             <div class="sign-up-form">
-                <h2>Let's Do This</h2>
-                <form action="" method="post">
+                <form>
                     <div class="form-control">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
 
                     <div class="form-control">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
 
                     <div class="form-control">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
                     </div>
 
                     <div class="form-control">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number">
+                        <input type="tel" id="phone-number" name="phone-number" required>
                     </div>
 
                     <div class="form-control">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                     </div>
 
                     <div class="form-control">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
 
                     <div class="form-control">
-                        <button type="submit">Create Account</button>
+                        <button type="submit" id="register">Create Account</button>
                     </div>
                 </form>
                 <p>Already have an account? <a href="./index.html">Log in</a></p>

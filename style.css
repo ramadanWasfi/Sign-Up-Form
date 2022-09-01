@@ -14,14 +14,15 @@
 
 body {
     background-color: #222;
-    font-family: 'JosefinSans-Regular', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));*/
+    grid-template-columns: 1fr 2fr;
     background-color: azure;
-    margin: 0 12rem;
+    margin: 0 15%;
 }
 
 .sidebar {
@@ -29,7 +30,6 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    width:30%;
     color: #eee;
     text-align: center;
     display: flex;
@@ -39,22 +39,18 @@ body {
 
 .logo {
     background-color:rgba(0,0,0,.5);
-    height: 100px;
     display: flex;
+    margin-top: 50%;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
 }
-
 
 .logo > p {
     color: #fff;
     font-size: 48px;
     font-style: italic;
 }
-.main {
-    width: 70%;
-}
+
 
 .sidebar > footer > a{
     color: #eee;
@@ -62,4 +58,86 @@ body {
 
 .sidebar > footer {
     margin-bottom: 12px;
+    font-size: 14px;
 }
+
+
+
+.main {
+    margin: 24px 48px;
+}
+
+.main-content {
+    margin-top: 10%;
+}
+
+.main-content > p{
+    font-size: 24px;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.main > h2 {
+    margin-top: 10%;
+}
+
+.sign-up-form {
+    margin-top: 24px;
+}
+
+.sign-up-form > p {
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+
+label {
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 250px;
+    background-color: #0e4e33;
+    color: #fff;
+}
+  
+input:invalid , input:not(value='') {
+    border: 3px solid red;
+}
+
+input:valid {
+    border: 3px solid green;
+}
+
+input:focus {
+    border: 3px solid blue;
+}
+  
